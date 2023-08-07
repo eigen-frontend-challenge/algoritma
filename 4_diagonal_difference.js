@@ -9,7 +9,10 @@ function diagonalDifference(arr){
         sumL += arr[i][len - i - 1]
     }
 
+    const difference = Math.abs(sumR-sumL)
     console.log(Math.abs(sumR-sumL))
+
+    return difference
 }
 
 diagonalDifference([[1, 2, 0], [4, 5, 6], [7, 8, 9]])
